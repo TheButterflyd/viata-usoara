@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="favicon" href="poze/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viață ușoară</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <img src="poze/logoul.png" style="display: inline-block; ">
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Acasa</a></li>
+                        <li><a href="products.html">Produse</a></li>
+                        <li><a href="about.html">Despre noi</a></li>
+                        <li><a href="">Cont</a></li>
+                    </ul>
+                </nav>
+                <img src="poze/cart.png" width="30px" height="30px">
+                <img src="poze/menu.png" class="menu-icon img-fluid" id="menu-icon" style="width: 30px"
+                    onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!-------- single product details ---------->
+    
+<div class="small-conatiner-single-product">
+    <div class="row" style="align-items: center; justify-content: center;">
+        <div class="col-2">
+          <img src="poze/bixtonim.png" width="100%">
+            </div>
+        <div class="col-2" style="display: inline;">
+
+                <h1> Bixtonim Rinite picături nazale soluţie</h1>
+                <h4>14.49 RON</h4>
+                <h3>Selectați cantitatea:</h3>
+            <input type="number" value="1" class="no-outline">
+            <a href="" class="btn">Adaugă în coș</a>
+            <h3>Detalii Bixtonim:</h3>
+            <br>
+            <p> Bixtonim Rinite picături nazale soluţie, 10 ml, Biofarm 
+                Indicatii:
+                Bixtonim Rinite este un decongestiv nazal indicat in afectiunile respiratorii insotite de congestie nazala si rinoree, rinite acute si subacute. Congestia nazala din rinita alergica, edem post-operator, oprirea epistaxisului in interventiile chirurgicaleCompozitie:
+                - Substanţele active sunt: un mililitru picături nazale, soluţie conţine 5 mg clorhidrat de efedrină, 0,2 mg hidrocortizon, 1 mg clorhidrat de nafazolină.
+                - Celelalte componente sunt: mertiolat de sodiu, etanol, clorură de sodiu, apă purificată.</p>
+    </div>
+</div>
+</div>
+
+<div class="small-container">
+	
+	<div class="row">
+<div class="col-4">
+	<img src="poze/colesterol.png">
+	<h4>Ceai de colesterol<h4>
+	<p>6.49 RON</p>
+</div>
+<div class="col-4">
+	<img src="poze/siofor.png">
+	<h4>Siofor 850<h4>
+	<p>10 RON</p>
+</div>
+<div class="col-4">
+	<img src="poze/vitamina.png">
+	<h4>Vitamina C<h4>
+	<p>25 RON</p>
+</div>
+</div>
+</div>
+
+    <!--josul paginii-->
+
+	<div class="footer">
+		<div class="container">
+		 <div class="row">
+		  <div class="footer-col-1">
+		   <h3>Viață ușoară</h3>
+		   <p>Informatii de contact</p>
+		   <h3>g.butterfly.com@gmail.com</h3>
+		   <h3>Numar de telefon: +40731720280</h3>
+	   </div>
+		<div class="footer-col-2">
+		   
+	   </div>
+		<div class="footer-col-3">
+		   <img src="poze/logoul.png">
+	   </div>
+	   </div>
+	   <hr>
+	   <p class="copyright">Copyright 2023 - TheButterfly</p>
+	   </div>
+	   </div>
+
+	<!--script pentru bootstrap-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<!--programul js pentru meniul de telefon-->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+	
+		MenuItems.style.maxHeight = "0px";
+		
+		function menutoggle(){
+			if(MenuItems.style.maxHeight == "0px")
+				{
+					MenuItems.style.maxHeight = "200px";
+				}
+				else
+				{
+					MenuItems.style.maxHeight = "0px";
+				}
+	}
+	</script>
+</body>
+
+</html>
