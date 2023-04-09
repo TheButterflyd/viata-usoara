@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="poze/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="poze/favicon.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +20,13 @@
     <div class="header">
         <div class="container">
             <div class="navbar">
-                <img src="poze/logoul.png" style="display: inline-block; ">
+                <img src="poze/logoul.png" style="display: inline-block;  width: 50px; ">
                 <nav>
                     <ul id="MenuItems">
                         <li><a href="index.html">Acasa</a></li>
                         <li><a href="products.html">Produse</a></li>
-                        <li><a href="">Contactati-ne</a></li>
-                        <li><a href="">Cont</a></li>
+                        <li><a href="about.html">Despre noi</a></li>
+                        <li><a href="cont.html">Cont</a></li>
                     </ul>
                 </nav>
                 <img src="poze/cart.png" width="30px" height="30px">
@@ -39,7 +39,7 @@
     <!--coloana pe orizonatala de elemente-->
     <div class="small-container">
         <div class="row row-2">
-            <h2>All products</h2>
+            <h2 id="produse">Toate produsele</h2>
             <select>
                 <option>Sortare normală</option>
                 <option>Preț crescător</option>
@@ -51,82 +51,82 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <a href="product-details.html"><img src="poze/memo1.png" id="memo"></a>
-                <a href="product-details.html">
-                    <h4 class="liniuta-alba" id="med" style="font-weight: bold;">Medicamente<h4>
+                <a href="memo.html"><img src="poze/memo1.png" id="memo"></a>
+                <a href="memo.html">
+                    <h4 class="liniuta-alba" id="med" style="font-weight: bold;">Memo Plus<h4>
                 </a>
-                <p>50 lei</p>
+                <p style="text-align: center;">29.50 RON</p>
             </div>
             <div class="col-4">
-                <a href="product-details.html"><img src="poze/vitamina.png"></a>
-                <a href="product-details.html">
-                    <h4 class="liniuta-alba" style="font-weight: bold;">Medicamente<h4>
+                <a href="vitamina.html"><img src="poze/vitamina.png"></a>
+                <a href="vitamina.html">
+                    <h4 class="liniuta-alba" style="font-weight: bold;">Vitamina C<h4>
                 </a>
-                <p>50 lei</p>
-            </div>
-            <div class="col-4">
-                <a href="product-details.html"><img src="poze/siofor.png"></a>
-                <a href="product-details.html">
-                    <h4 class="liniuta-alba" style="font-weight: bold;">Medicamente<h4>
-                </a>
-                <a href="product-details.html"></a>
-                <p>50 lei</p>
-            </div>
-            <div class="col-4">
-                <a href="product-details.html" class="liniuta-alba"><img src="poze/detrical.png"></a>
-                <a href="product-details.html">
-                    <h4 class="liniuta-alba" style="font-weight: bold;">Medicamente<h4>
-                </a>
-                <p>50 lei</p>
-            </div>
-            <div class="col-4">
-                <a href="product-details.html"><img src="poze/ginko.png"></a>
-                <a href="product-details.html">
-                    <h4 class="liniuta-alba" style="font-weight: bold;">Medicamente<h4>
-                </a>
-                <p>50 lei</p>
-            </div>
-            <div class="col-4">
-                <a href="product-details.html"><img src="poze/colesterol.png"></a>
-                <a href="product-details.html">
-                    <h4 class="liniuta-alba" style="font-weight: bold;">Medicamente<h4>
-                </a>
-                <p>50 lei</p>
+                <p style="text-align: center;">20 RON</p>
             </div>
             <div class="col-4">
                 <a href="product-details.html"><img src="poze/siofor.png"></a>
                 <a href="product-details.html">
-                    <h4 class="liniuta-alba" style="font-weight: bold;">Medicamente<h4>
+                    <h4 class="liniuta-alba" style="font-weight: bold;">Siofor 850<h4>
                 </a>
                 <a href="product-details.html"></a>
-                <p>50 lei</p>
+                <p style="text-align: center;">10 RON</p>
             </div>
             <div class="col-4">
                 <a href="product-details.html" class="liniuta-alba"><img src="poze/detrical.png"></a>
                 <a href="product-details.html">
-                    <h4 class="liniuta-alba" style="font-weight: bold;">Medicamente<h4>
+                    <h4 class="liniuta-alba" style="font-weight: bold;">Detrical 1000<h4>
                 </a>
-                <p>50 lei</p>
+                <p style="text-align: center;">14 RON</p>
             </div>
             <div class="col-4">
-                <a href="product-details.html" class="liniuta-alba"><img src="poze/detrical.png"></a>
-                <a href="product-details.html">
-                    <h4 class="liniuta-alba" style="font-weight: bold;">Medicamente<h4>
+                <a href="ginko.html"><img src="poze/ginko.png"></a>
+                <a href="ginko.html">
+                    <h4 class="liniuta-alba" style="font-weight: bold;">Ginko biloba 60mg<h4>
                 </a>
-                <p>50 lei</p>
+                <p style="text-align: center;">24.50 RON</p>
+            </div>
+            <div class="col-4">
+                <a href="colesterol.html"><img src="poze/colesterol.png"></a>
+                <a href="colesterol.html">
+                    <h4 class="liniuta-alba" style="font-weight: bold;">Colesterol<h4>
+                </a>
+                <p style="text-align: center;">6.50 RON</p>
+            </div>
+            <div class="col-4">
+                <a href="nurofen.html"><img src="poze/nurofen.png"></a>
+                <a href="nurofen.html">
+                    <h4 class="liniuta-alba" style="font-weight: bold;">Nurofen<h4>
+                </a>
+                <a href="product-details.html"></a>
+                <p style="text-align: center;">33 RON</p>
+            </div>
+            <div class="col-4">
+                <a href="bixtonim.html" class="liniuta-alba"><img src="poze/bixtonim.png"></a>
+                <a href="bixtonim.html">
+                    <h4 class="liniuta-alba" style="font-weight: bold;">Bixtonim<h4>
+                </a>
+                <p style="text-align: center;">13.50 RON</p>
+            </div>
+            <div class="col-4">
+                <a href="coldrex.html" class="liniuta-alba"><img src="poze/coldrex.png"></a>
+                <a href="coldrex.html">
+                    <h4 class="liniuta-alba" style="font-weight: bold; ">Coldrex MAX<h4>
+                </a>
+                <p style="text-align: center;">24 RON</p>
             </div>
 
         </div>
     </div>
 
     <!--numerotarea paginii-->
-    <div class="page-btn">
-		<a href="products.html"><span>1</span></a>
-		<a href="denta.html"><span>2</span></a>
-		<span>3</span>
-		<span>4</span>		
-	</div>
-</div>
+    <div class="page-btn" style="text-align: center;" >
+        <a href="products.html" style="color: black;"><span>1</span></a>
+        <a href="products.html" style="color: black;"><span>2</span></a>
+        <a href="products.html" style="color: black;"><span>3</span></a>
+        <a href="products.html" style="color: black;"><span>4</span></a>
+    </div>
+    </div>
 
     <!--josul paginii-->
 
@@ -179,4 +179,50 @@
     </script>
 </body>
 
+<!--program ordonare crescatoare-->
+
+<script>
+
+    // functia care se executa la apasarea butonului de sortare
+    function sortProducts() {
+        const select = document.querySelector('select');
+        select.style.width = '70%';
+        select.style.textAlign = 'right';
+        const option = select.options[select.selectedIndex].text;
+
+        // se selecteaza elementele din html care contin informatiile despre produse si se stocheaza intr-un array
+        const products = Array.from(document.querySelectorAll('.col-4'));
+
+        // se sorteaza produsele in functie de optiunea aleasa
+        if (option === 'Preț crescător') {
+            products.sort((a, b) => {
+                const priceA = parseFloat(a.querySelector('p').textContent.split(' ')[0]);
+                const priceB = parseFloat(b.querySelector('p').textContent.split(' ')[0]);
+                return priceA - priceB;
+            });
+        } else if (option === 'Preț descrescător') {
+            products.sort((a, b) => {
+                const priceA = parseFloat(a.querySelector('p').textContent.split(' ')[0]);
+                const priceB = parseFloat(b.querySelector('p').textContent.split(' ')[0]);
+                return priceB - priceA;
+            });
+        } else if (option === 'Sortare dupa vânzări') {
+            products.sort((a, b) => {
+                const salesA = parseInt(a.querySelector('.sales').textContent);
+                const salesB = parseInt(b.querySelector('.sales').textContent);
+                return salesB - salesA;
+            });
+        }
+
+        // se sterge continutul div-ului care contine produsele si se adauga produsele sortate
+        const container = document.querySelector('.row');
+        const continutHTML = select.outerHTML;
+        
+        products.forEach(product => container.appendChild(product));
+    }
+
+    // se adauga un event listener care va apela functia de sortare la apasarea butonului
+    document.querySelector('select').addEventListener('change', sortProducts);
+
+</script>
 </html>
