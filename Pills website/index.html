@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<link rel="icon" href="poze/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="poze/favicon.ico">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +20,13 @@
 	<div class="header">
 		<div class="container">
 			<div class="navbar">
-				<img src="poze/logoul.png" style="display: inline-block; ">
+				<img src="poze/logoul.png" style="display: inline-block; width: 50px; ">
 				<nav>
 					<ul id="MenuItems">
 						<li><a href="index.html">Acasa</a></li>
 						<li><a href="products.html">Produse</a></li>
-						<li><a href="">Contactati-ne</a></li>
-						<li><a href="">Cont</a></li>
+						<li><a href="about.html">Despre noi</a></li>
+						<li><a href="cont.html">Cont</a></li>
 					</ul>
 				</nav>
 				<img src="poze/cart.png" width="30px" height="30px">
@@ -39,7 +39,7 @@
 					<h1>Bine ati venit! <br>Speram sa va placa gama noastra de produse farmaceutice! </h1>
 					<br>
 					<a href="products.html" id="buton">Exploreaza produsele</a>
-					<a href="products.html" id="buton1">Suna-ne pentru a iti usura munca!</a>
+					<a href="products.html" id="buton1" onclick="callNumber()">Suna-ne pentru a iti usura munca!</a>
 				</div>
 				<div class="col-md-6">
 					<img src="poze/d1.png" class="float-right img-fluid" style="width: 550px">
@@ -47,50 +47,57 @@
 			</div>
 		</div>
 	</div>
-	<h1  style="text-align:center; margin-top: 100px; font-weight: bold;">Produse recomandate</h1>
+	<h1 style="text-align:center; margin-top: 100px; font-weight: bold;">Produse recomandate</h1>
 
 	<!--prima parte de categorii de-->
 	<div class="categories">
 		<div class="small-container">
-	<div class="row">
-	<div class="col3">
-		<img src="poze/acc.png">
-		<h4 style="text-align:center;" class="liniuta-alba" id="linie-speciala2">ACC</h4>
-	</div>
-	<div class="col3">
-	<img src="poze/p2.png">
-	<h4 style="text-align:center; " class="liniuta-alba" id="linie-p">Parasinus</h4>
-	</div>
-	<div class="col3">
-	<img src="poze/voltaren.png">
-	<h4 style="text-align:center;" class="liniuta-alba" id="linie-speciala">Voltaren</h4>
-	</div>
-	</div>
-	</div>
+			<div class="row" style="display: flex; justify-content: center;">
+				<div class="col3">
+					<a href="acc.html"><img src="poze/acc.png"></a>
+					<a href="acc.html">
+						<h4 style="text-align:center;" class="liniuta-alba" id="linie-speciala2">ACC</h4>
+					</a>
+					<a href="acc.html">
+						<p style="text-align: center; font-weight: bold; font-size: 20px; color: black;">34.50 RON</p>
+					</a>
+				</div>
+				<div class="col3">
+					<img src="poze/p2.png">
+					<h4 style="text-align:center; " class="liniuta-alba" id="linie-p">Parasinus</h4>
+					<p style="text-align: center; font-weight: bold; font-size: 20px;">31 RON</p>
+				</div>
+				<div class="col3">
+					<img src="poze/voltaren.png">
+					<h4 style="text-align:center;" class="liniuta-alba" id="linie-speciala">Voltaren</h4>
+					<p style="text-align: center; font-weight: bold; font-size: 20px;">37.50 RON</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!--josul paginii-->
 
 	<div class="footer">
 		<div class="container">
-		 <div class="row">
-		  <div class="footer-col-1">
-		   <h3>Viață ușoară</h3>
-		   <p>Informatii de contact</p>
-		   <h3>g.butterfly.com@gmail.com</h3>
-		   <h3>Numar de telefon: +40731720280</h3>
-	   </div>
-		<div class="footer-col-2">
-		   
-	   </div>
-		<div class="footer-col-3">
-		   <img src="poze/logoul.png">
-	   </div>
-	   </div>
-	   <hr>
-	   <p class="copyright">Copyright 2023 - TheButterfly</p>
-	   </div>
-	   </div>
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Viață ușoară</h3>
+					<p>Informatii de contact</p>
+					<h3>g.butterfly.com@gmail.com</h3>
+					<h3>Numar de telefon: +40731720280</h3>
+				</div>
+				<div class="footer-col-2">
+
+				</div>
+				<div class="footer-col-3">
+					<img src="poze/logoul.png">
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2023 - TheButterfly</p>
+		</div>
+	</div>
 
 	<!--script pentru bootstrap-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -106,20 +113,27 @@
 	<!--programul js pentru meniul de telefon-->
 	<script>
 		var MenuItems = document.getElementById("MenuItems");
-	
+
 		MenuItems.style.maxHeight = "0px";
-		
-		function menutoggle(){
-			if(MenuItems.style.maxHeight == "0px")
-				{
-					MenuItems.style.maxHeight = "200px";
-				}
-				else
-				{
-					MenuItems.style.maxHeight = "0px";
-				}
-	}
+
+		function menutoggle() {
+			if (MenuItems.style.maxHeight == "0px") {
+				MenuItems.style.maxHeight = "200px";
+			}
+			else {
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
 	</script>
+
+	<!--script pentru a apela call center-->
+	<script>
+		function callNumber() {
+			var phoneNumber = "+40731720280";
+			window.location.href = "tel:" + phoneNumber;
+		}
+	</script>
+
 </body>
 
 </html>
